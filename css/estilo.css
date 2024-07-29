@@ -4,52 +4,67 @@
 }
 
 :root {
-    --bg-color-gray: rgb(25, 25, 25);
+    --bg-color-rainbow: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+
 }
 
 body {
-    background-color: var(--bg-color-gray);
-    color: white;
-    border: 1px solid green;
-    width: 75%;
+    background: var(--bg-color-rainbow);
+    width: 90%;
+    min-height: 100vh;
     margin: 0 auto;
+}
+
+.container {
+    width: 85%;
+    min-height: 85vh;
+    background-color: white;
 }
 
 /* Cabecalho */
 #cabecalho {
+    width: 95%;
+}
+
+#cabecalho nav {
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.navbar-brand img {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pagina Inicial */
+
+#eventos-box {
+    overflow-y: scroll;
+    height: 450px;
+    width: 80%;
+    padding: 10px;
+}
+
+#eventos-box .card {
+    width: 100%;
+    height: 200px;
+}
+
+/* Sobre Nós */
+
+#sobre-box {
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* Contato */
+
+#contato-box {
     margin: 10px;
-    width: 40px;
-    height: 40px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid #505050;
+    border-radius: 5px;
 }
 
-.bn3 {
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    border-radius: 2em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    transition: all 0.2s;
-    background-color: rgb(25, 25, 25);
-}
-
-.bn3 img {
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-}
-
-.bn3:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-
-.bn3:hover img {
-    filter: invert(0);
-}

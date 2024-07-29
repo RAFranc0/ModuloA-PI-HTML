@@ -12,9 +12,30 @@
 </head>
 
 <body>
-    <header class="fixed-top" id="cabecalho"></header>
+    <header class="mx-auto mb-1" id="cabecalho"></header>
     
-    <div class="container">Container</div>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div id="eventos-box">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="Imagem do evento">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo do Evento</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed sequi dignissimos labore minus laborum nisi voluptatum omnis natus totam error non aliquid suscipit, repudiandae dolorum odio iste ad magni.</p>
+                      <p class="card-text d-flex justify-content-around">
+                        <small class="text-body-secondary">Data:</small>
+                        <small class="text-body-secondary">Horario:</small>
+                        <small class="text-body-secondary">Local:</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
