@@ -5,11 +5,11 @@
 
 :root {
     --bg-color-rainbow: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-
+    --bg-color-gray: linear-gradient(45deg, #d3d3d3, #505050);
 }
 
 body {
-    background: var(--bg-color-rainbow);
+    background: var(--bg-color-gray);
     width: 90%;
     min-height: 100vh;
     margin: 0 auto;
